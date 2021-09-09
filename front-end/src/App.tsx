@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>CBSL App</h1>
+      <h1>CBSL App - Hansa</h1>
     </div>
   );
 }
