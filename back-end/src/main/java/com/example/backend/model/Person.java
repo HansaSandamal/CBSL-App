@@ -3,6 +3,7 @@ package com.example.backend.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 @Document(collection = "person")
@@ -17,8 +18,9 @@ public class Person {
     private String nic;
     private String gender;
     private String address;
+    private ArrayList<String> bank_id = new ArrayList<String>();
 
-    public Person(String id, String firstName, String lastName, Date dateOfBirth, Number phoneNo, String nic, String gender, String address) {
+    public Person(String id, String firstName, String lastName, Date dateOfBirth, Number phoneNo, String nic, String gender, String address, ArrayList<String> bank_id) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -27,7 +29,18 @@ public class Person {
         this.nic = nic;
         this.gender = gender;
         this.address = address;
+        this.bank_id = bank_id;
     }
+
+    public ArrayList<String> getBank_id() {
+        return bank_id;
+    }
+
+    public void setBank_id(ArrayList<String> bank_id) {
+        this.bank_id = bank_id;
+    }
+
+
 
     public String getId() {
         return id;
@@ -94,7 +107,7 @@ public class Person {
     }
     @Override
     public String toString() {
-        return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth + ",phoneNo="+phoneNo+",nic="+nic+",gender="+gender+",address="+address+"]";
+        return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth + ",phoneNo="+phoneNo+",nic="+nic+",gender="+gender+",address="+address+",bank_id="+bank_id+"]";
     }
     public Person(){
 
