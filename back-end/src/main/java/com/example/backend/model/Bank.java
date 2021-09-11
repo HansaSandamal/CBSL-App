@@ -13,9 +13,7 @@ public class Bank {
         this.id = id;
         this.bankName = bankName;
     }
-    public Bank(){
 
-    }
 
     public String getId() {
         return id;
@@ -31,5 +29,12 @@ public class Bank {
 
     public void setBankName(String bankName) {
         this.bankName = bankName;
+    }
+    @Override
+    public String toString() {
+        return "Bank [id=" + id + ", bankName=" + bankName + "]";
+    }
+    public Bank(){
+
     }
 }

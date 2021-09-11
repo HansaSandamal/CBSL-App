@@ -107,7 +107,7 @@ public class Person {
     }
     @Override
     public String toString() {
-        return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth + ",phoneNo="+phoneNo+",nic="+nic+",gender="+gender+",address="+address+",bank_id="+bank_id+"]";
+        return "Person [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth + ",phoneNo="+phoneNo+",nic="+nic+",gender="+gender+",address="+address+",bank_id="+bank_id+"]";
     }
     public Person(){
 
