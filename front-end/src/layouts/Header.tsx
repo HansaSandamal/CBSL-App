@@ -1,11 +1,11 @@
 import React from "react";
-import {Image, Nav, Navbar, NavDropdown} from "react-bootstrap";
-
+import {Nav, Navbar, NavDropdown} from "react-bootstrap";
+ 
 
 const Header: React.FC = () => {
     return (
         <Navbar className='font-link' collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="/"> <h1>CBSL</h1></Navbar.Brand>
+            <Navbar.Brand href="/"> <span className="p-3">CBSL</span></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
