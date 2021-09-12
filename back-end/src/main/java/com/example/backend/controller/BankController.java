@@ -71,5 +71,24 @@ public class BankController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+    @DeleteMapping("/banks/{id}")
+    public ResponseEntity<HttpStatus> deleteTutorial(@PathVariable("id") String id) {
+        try {
+            bankRepository.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @DeleteMapping("/banks")
+    public ResponseEntity<HttpStatus> deleteAllTutorials() {
+        try {
+            bankRepository.deleteAll();
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
 }
