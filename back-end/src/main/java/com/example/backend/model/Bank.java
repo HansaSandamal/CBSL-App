@@ -9,8 +9,7 @@ public class Bank {
     private String id;
     private String bankName;
 
-    public Bank(String id, String bankName) {
-        this.id = id;
+    public Bank(String bankName) {
         this.bankName = bankName;
     }
 
@@ -30,11 +29,13 @@ public class Bank {
     public void setBankName(String bankName) {
         this.bankName = bankName;
     }
+
     @Override
     public String toString() {
         return "Bank [id=" + id + ", bankName=" + bankName + "]";
     }
-    public Bank(){
+
+    public Bank() {
 
     }
 }

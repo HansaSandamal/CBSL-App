@@ -20,8 +20,8 @@ public class Person {
     private String address;
     private ArrayList<String> bank_id = new ArrayList<String>();
 
-    public Person(String id, String firstName, String lastName, Date dateOfBirth, Number phoneNo, String nic, String gender, String address, ArrayList<String> bank_id) {
-        this.id = id;
+    public Person(String firstName, String lastName, Date dateOfBirth, Number phoneNo, String nic, String gender, String address, ArrayList<String> bank_id) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
